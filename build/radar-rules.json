@@ -37791,6 +37791,22 @@
         "target": "/bilibili/user/bangumi/:uid"
       },
       {
+        "title": "UP 主频道的视频列表",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:uid/lists/:sid"
+        ],
+        "target": "/bilibili/user/channel/:uid/:sid"
+      },
+      {
+        "title": "UP 主频道的合集",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:uid/lists/:sid"
+        ],
+        "target": "/bilibili/user/collection/:uid/:sid"
+      },
+      {
         "title": "UP 主默认收藏夹",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
@@ -43849,6 +43865,19 @@
           "/t/:postid"
         ],
         "target": "/v2ex/post/:postid"
+      }
+    ]
+  },
+  "vb-audio.com": {
+    "_name": "VB-Audio",
+    "forum": [
+      {
+        "title": "Voicemeeter Version History",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/viewtopic.php"
+        ],
+        "target": "/vb-audio/voicemeeter/changelog"
       }
     ]
   },
@@ -55020,16 +55049,6 @@
   },
   "yahoo.com": {
     "_name": "Yahoo",
-    "finance": [
-      {
-        "title": "Finance news",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/topic/:topic"
-        ],
-        "target": "/yahoo/finance/:topic"
-      }
-    ],
     "tech": [
       {
         "title": "Gaming news",
@@ -55048,6 +55067,26 @@
           "/brands/:publisher"
         ],
         "target": "/yahoo/news/publisher/:publisher"
+      }
+    ],
+    "hk.finance": [
+      {
+        "title": "Finance news (Hong Kong)",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/yahoo/finance/hk/:topic"
+      }
+    ],
+    "finance": [
+      {
+        "title": "Finance news",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/yahoo/finance/:topic"
       }
     ],
     "news": [
